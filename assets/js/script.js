@@ -28,3 +28,5 @@ button.addEventListener("click", gotClicked);
 function gotClicked(e) {
     window.location.reload();
 }
+
+//notes notes notes
