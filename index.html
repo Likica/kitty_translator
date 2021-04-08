@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +9,47 @@
     <link href="">
     <!--DADDYJOKES API here with API KEY-->
     <link href="">
-    <!--Tailwind link HERE-->
-    <link href="">
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <!--Local css file linked-->
     <link href="./assets/css/style.css" rel="stylesheet">
 
-</head>
+    <title>Kitty Translator</title>
+  </head>
 <body>
     <!-- Header -->
-    <header>
-        <h1>MEOW!</h1>
+    <header class="text-center">
+        <h1>CAT-TASTROPHY</h1>
+        <h2>One stop shop for your cat photos and a good laugh.</h2>
     </header>
 
-    <!-- Main Content: Gif, Joke, Button -->
-    <main>
-        <section>
-            <!-- Cat Gif here -->
-            <div>Cat Gif</div>
+  <main>
+  <div>
+            <!-- random button (left side of page)-->
+            <!-- userInput with search btn start-->
+            <div class="card">
+                <h3>Welcome to Kitty Translator! Please Have Fun!</h3>
+                <form id="user-form" class="card-body">
+                    <input name="searchTerm" id="searchTerm" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Submit/Search</button>
+                </form>
+            </div>
+            <!-- userInput with search btn end-->
+            <!--Displayed photo/gif-->
+            <div class="bg-salmon h-400 w-400">
+                <a href="https://placeholder.com"><img class="object-cover h-60 w-full" src="https://via.placeholder.com/400"></a>
+            </div>
+            <!--Display quote/joke-->
+            <div >
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa neque autem error, deserunt eos tempora nam omnis quo est magnam dicta sit, cupiditate, dolores provident corporis voluptates minus dolorem commodi.</p>
+            </div>
 
-            <!-- Joke here -->
-            <div>Joke</div>
-        </section>
-
-        <!-- Div for positioning button on app-->
-        <div>
-            <button>Button</button>
+            <div class="mb-4 md:mb-0 px-4 w-full md:w-4/4">
+              <!-- Randomize with btn start-->
+                <h3 class="card-header text-uppercase">Click to get Random Images</h3>
+                <div id="randomBtn" class="random-btn">
+                    <button>Random Cats and Stuff</button>
+                    <!-- Randomize with btn end-->  
+            </div>
         </div>
     </main>
 
@@ -43,7 +61,6 @@
             &copy; Coding Bootcamp Group 1.
         </div>
     </footer>
-
     <!-- Local JS file linked-->
     <script src="./assets/js/script.js"></script>
 </body>
