@@ -5,45 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="CAT API link here with API KEY">
-    <link href="DADDYJOKES API here with API KEY">
-    <link href="Tailwind link HERE ">
+    <!--CAT API link here with API KEY-->
+    <link href="">
+    <!--DADDYJOKES API here with API KEY-->
+    <link href="">
+    <!--Tailwind link HERE-->
+    <link href="">
+    <!--Local css file linked-->
     <link href="./assets/css/style.css" rel="stylesheet">
 
-    <title>Kitty Translator</title>
+    <title>Kitty Translator!</title>
 </head>
-<!-- Jumbotron Start-->
 
 <body>
+    <header>
+        <h1>MEOW!</h1>
+    </header>
+
     <main class="flex-row justify-space-between">
-        <div class="card">
-            <h3 class="card-header text-uppercase">Welcome to Kitty Translator! Please Have Fun!</h3>
-            <form id="user-form" class="card-body">
-                <input name="searchTerm" id="searchTerm" type="text" autofocus="true" class="form-input" />
-                <button type="submit" class="btn">Search</button>
-            </form>
-        </div>
-    </main>
-    <div class="card">
-        <h3 class="card-header text-uppercase">Click to get Random Images</h3>
-        <div id="randomBtn" class="random-btn">
-            <button class="btn">Randomize</button>
-        </div>
-    </div>
-    </div>
-    <h2 class="subtitle">Here is what kitty says!<span id="catAPI"></span></h2>
-    <div id="catApi-container" class="list-group">
+        <!-- type language in search bar (left side of page)-->
+        <section>
+            <div class="">
 
-        <!-- footer -->
-        <footer>
-            <h2>❤️ Made with love by Group 1.</h2>
-            <div>
-                <a>We want you to have FUN!</a><br />
-                &copy; Coding Bootcamp Group 1.
             </div>
-        </footer>
+        </section>
 
-        <script src="./assets/js/script.js"></script>
+        <!-- main content here (image, translation, button) -->
+        <section>
+            <div class="cat-gif">put cat gif here</div>
+
+            <div class="translate-section">put translation here</div>
+            <!-- userInput with search btn start-->
+            <div class="card">
+                <h3 class="card-header text-uppercase">Welcome to Kitty Translator! Please Have Fun!</h3>
+                <form id="user-form" class="card-body">
+                    <input name="searchTerm" id="searchTerm" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+            <!-- userInput with search btn end-->
+            <!-- Randomize with btn start-->
+            <div class="card">
+                <h3 class="card-header text-uppercase">Click to get Random Images</h3>
+                <div id="randomBtn" class="random-btn">
+                    <button class="btn">Randomize</button>
+                    <!-- Randomize with btn end-->
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <h2>❤️ Made with love by Group 1.</h2>
+        <div>
+            <a>We want you to have FUN!</a><br />
+            &copy; Coding Bootcamp Group 1.
+        </div>
+    </footer>
+    <!-- Local JS file linked-->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
