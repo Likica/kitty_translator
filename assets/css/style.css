@@ -1,0 +1,24 @@
+/*Footer basic CSS*/
+footer {
+    background:deepskyblue;
+    width: 99%;
+    padding: 10px 5px;
+    object-position: bottom;
+  }
+  
+  footer h2 {
+    display: inline;
+    color:black;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1;
+    text-align: left;
+    float: right;
+  }
+  
+  footer a {
+    color:red;
+  }
