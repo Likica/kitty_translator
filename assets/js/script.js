@@ -26,6 +26,20 @@ fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be
     
     
     saveCat.addEventListener("click", catSaved);
+
+    function catSaved(e){
+        console.log("got clicked")
+        // var catImg = document.createElement('img');
+        // catImg.setAttribute('src', response[0].url);
+        
+        var catPlace = document.getElementById("catSaveDisplay")
+        var saveCatEl = document.getElementById("catSave")
+        
+        catPlace.appendChild(catImg)
+        
+        
+        }
+
 });
 
 var getButton = document.getElementById("catGet")
@@ -38,13 +52,18 @@ function gotClicked(e) {
 
 
 
-function catSaved(e){
-console.log("got clicked")
+// function catSaved(e){
+// console.log("got clicked")
+// var catImg = document.createElement('img');
+// catImg.setAttribute('src', response[0].url);
 
-var catPlace = document.getElementById("catSave");
-catPlace.innerHTML= catImg;
+// var catPlace = document.getElementById("catSaveDisplay")
+// var saveCatEl = document.getElementById("catSave")
 
-}
+// catPlace.appendChild(catImg)
+
+
+// }
 
 //jokeapi
 fetch(`https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single`)
