@@ -10,53 +10,30 @@
     <!--Local css file linked-->
     <link href="./assets/css/style.css" rel="stylesheet">
 
-    <title>Kitty Translator</title>
+    <title>Just Kitten Around!</title>
 </head>
 
 <body>
     <!-- Header (contributed by commits from Becca/Emily/Katie)-->
     <header class="text-center">
-        <h1>CAT-TASTROPHY</h1>
+        <h1>Just Kitten Around!</h1>
         <h2>One stop shop for your cat photos and a good laugh.</h2>
     </header>
 
     <main>
-        <div>
-            <!-- random button (left side of page)-->
-            <!-- userInput with search btn start-->
-            <div class="card">
-                <h3>Welcome to Kitty Translator! Please Have Fun!</h3>
-                <form id="user-form" class="card-body">
-                    <input name="searchTerm" id="searchTerm" type="text" autofocus="true" class="form-input" />
-                    <button type="submit" class="btn">Submit/Search</button>
-                </form>
-            </div>
-            <!-- userInput with search btn end-->
-            <!-- add fetch, add refresh button start-->
+        <section>
+            <!-- Cat Gif here -->
             <div id="cat-container"></div>
+
+            <!-- Joke here -->
+            <div id="joke-container"></div>
+        </section>
+
+        <!-- Div for positioning button with css-->
+        <div>
+            <!-- Click button to refresh page and get new cat gif and joke content -->
             <button id='catGet'>get cat</button>
-            <!-- add fetch, add refresh button start-->
-
-            <!--Displayed photo/gif-->
-            <div class="bg-salmon h-400 w-400">
-                <a href="https://placeholder.com"><img class="object-cover h-60 w-full"
-                        src="https://via.placeholder.com/400"></a>
-            </div>
-            <!--Display quote/joke-->
-            <div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa neque autem error, deserunt eos
-                    tempora nam omnis quo est magnam dicta sit, cupiditate, dolores provident corporis voluptates minus
-                    dolorem commodi.</p>
-            </div>
-
-            <div class="mb-4 md:mb-0 px-4 w-full md:w-4/4">
-                <!-- Randomize with btn start-->
-                <h3 class="card-header text-uppercase">Click to get Random Images</h3>
-                <div id="randomBtn" class="random-btn">
-                    <button>Random Cats and Stuff</button>
-                    <!-- Randomize with btn end-->
-                </div>
-            </div>
+        </div>
     </main>
 
     <!-- Footer -->
