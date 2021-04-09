@@ -29,7 +29,7 @@ fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be
         catImg.setAttribute('src', response[0].url);
 
         //set classes
-        catImg.className = 'object-cover h-1/2 w-1/2';
+        catImg.className = 'object-scale-down h-96 w-1/2';
 
         //append img element to page
         catContainerEl.appendChild(catImg);

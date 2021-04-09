@@ -1,3 +1,11 @@
+/* Colors */
+:root {
+  --primary: #f49097;
+  --secondary: #DFB2F4;
+  --third: #F5E960; 
+}
+
+
 /*Footer basic CSS*/
 footer {
     background:deepskyblue;
@@ -22,3 +30,5 @@ footer {
   footer a {
     color:red;
   }
+
+  
