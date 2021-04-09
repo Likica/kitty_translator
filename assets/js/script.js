@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// Random Joke API
-var getRandomJoke = function() {
-    fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&amount=10");
-=======
 // module.exports = {
 //     theme: {
 //         colors: {
@@ -53,9 +48,19 @@ var getRandomJoke = function () {
 
     // Convert response to JSON
     .then(function(response) {
-        
-    })
->>>>>>> develop
+        return response.json();
+    });
+
+    .then(function(response) {
+        // Get reference to joke container
+        var jokeContainerEl = document.querySelector("#joke-container");
+
+        //Create a p element
+        var jokeText = document.createElement("p");
+
+        // Append p to joke container
+        jokeContainerEl.appendChild(jokeText);
+    });
 };
 
 getRandomJoke();
