@@ -43,24 +43,29 @@ function gotClicked(e) {
 //notes notes notes
 
 // Random Joke API contributed by Becca - added locally by F and pushed to develop. Could not merge on GitHub because all files were pushed to the feature/fetch-joke-api branch and were behind for large amount of commits from develop - if merged all files on develop would be overwritten by existing files in the feature/fetch-joke-api branch
-var getRandomJoke = function () {
-    fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&amount=10");
+fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-55')
 
-    // Convert response to JSON
-    .then(function(response) {
+    // Convert the response to JSON
+    .then(function (response) {
         return response.json();
-    });
-
-    .then(function(response) {
-        // Get reference to joke container
+    })
+    .then(function (response) {
+        //use "querySelector to get the ID of where the joke will be displayed"
         var jokeContainerEl = document.querySelector("#joke-container");
 
-        //Create a p element
-        var jokeText = document.createElement("p");
+        //create a text/text-box element
+        var jokeText = document.createElement('joke');
 
-        // Append p to joke container
+        //set src attribute to the joke url from joke api response
+        jokeText.innerText = response.joke;
+
+        //append img element to page
         jokeContainerEl.appendChild(jokeText);
     });
-};
+var button = document.getElementById("jokeGet")
 
-getRandomJoke();
+button.addEventListener("click", gotClicked);
+
+function gotClicked(e) {
+    window.location.reload();
+}
