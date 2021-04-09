@@ -45,6 +45,11 @@ function gotClicked(e) {
 // Random Joke API contributed by Becca - added locally by F and pushed to develop. Could not merge on GitHub because all files were pushed to the feature/fetch-joke-api branch and were behind for large amount of commits from develop - if merged all files on develop would be overwritten by existing files in the feature/fetch-joke-api branch
 var getRandomJoke = function () {
     fetch("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&amount=10");
+
+    // Convert response to JSON
+    .then(function(response) {
+        
+    })
 };
 
 getRandomJoke();
