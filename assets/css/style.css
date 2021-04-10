@@ -1,3 +1,20 @@
+/* Header styles */
+header {
+  padding: 60px;
+  margin-bottom: 40px;
+  /* temporary background color until root colors are defined in css sheet */
+  background-color: blueviolet;
+}
+
+header h1{
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  font-size: 25px;
+}
 
 /*Footer basic CSS*/
 footer {
