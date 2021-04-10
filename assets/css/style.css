@@ -37,29 +37,41 @@ header div h2 {
 
 /*Footer basic CSS*/
 footer {
-    width: 100%;
-    padding: 10px 5px;
-    object-position: bottom;
-    position: fixed;
-    bottom: 0;
-    font-family: "Spartan", sans-serif;
-  }
+  width: 100%;
+  padding: 10px 5px;
+  object-position: bottom;
+  position: fixed;
+  bottom: 0;
+  font-family: "Spartan", sans-serif;
+}
   
-  footer h2 {
-    display: inline;
-    color:black;
-    font-size: 14px;
-    margin: 0;
-  }
+footer h2 {
+  display: inline;
+  color:black;
+  font-size: 14px;
+  margin: 0;
+}
   
-  footer div {
-    line-height: 1;
-    text-align: left;
-    float: right;
-  }
+footer div {
+  line-height: 1;
+  text-align: left;
+  float: right;
+}
   
-  footer a {
-    color:red;
-  }
+footer a {
+  color:red;
+}
 
+/* Media Query for smaller screen sizes */
+/* @media screen and (max-width: 575px){
+
+}
+
+@media screen and (max-width: 768px){
+    
+}
+
+@media screen and (max-width: 980px){
+    
+} */
   

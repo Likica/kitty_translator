@@ -1,4 +1,14 @@
-
+// tailwind.config.js
+/* module.exports = {
+    theme: {
+        // make breakpoints for different screen sizes
+        screens: {
+            'sm': {'max': '575px'},
+            'md': {'max': '768px'},
+            'lg': {'max': '980px'},
+        }
+    }
+} */
 
 // Contribution by Katie - added locally by F and pushed to develop. Could not merge on GitHub because all files were pushed to the feature/catapi branch and were behind for large amount of commits from develop - if merged all files on develop would be overwritten by existing files in the feature/catapi branch
 fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
