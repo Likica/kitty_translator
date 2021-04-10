@@ -46,7 +46,7 @@ function gotClicked() {
 
     fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
     
-// Conver the respionse to JSON
+// Convert the response to JSON
 .then(function(response) {
     return response.json();
 })
@@ -90,12 +90,11 @@ function catSaved(){
     savedCats.push(catImg.src)
     console.log(catImg)
     console.log(catImg.src)
-    localStorage.setItem("saved-cats", savedCats);
+    localStorage.setItem("saved-cats", JSON.stringify(savedCats));
     // console.log(savedCats)
 
-    // var cats = localStorage.getItem("saved-cats")
+    var cats = localStorage.getItem("saved-cats")
     
-   
     console.log(savedCats)
     };
 
