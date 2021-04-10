@@ -1,12 +1,4 @@
-// module.exports = {
-//     theme: {
-//         colors: {
-//             salmon: '#F49097',
-//             mauve: '#DFB2FA',
-//             corn: 'F5E960',
-//         }
-//     }
-// }
+
 
 // Contribution by Katie - added locally by F and pushed to develop. Could not merge on GitHub because all files were pushed to the feature/catapi branch and were behind for large amount of commits from develop - if merged all files on develop would be overwritten by existing files in the feature/catapi branch
 fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
@@ -27,6 +19,9 @@ fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be
         //set src attribute to the image url from cat api response
 
         catImg.setAttribute('src', response[0].url);
+
+        //set classes
+        catImg.className = 'object-scale-down h-96 w-1/2';
 
         //append img element to page
         catContainerEl.appendChild(catImg);

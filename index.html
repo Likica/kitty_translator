@@ -21,28 +21,27 @@
     </header>
 
     <main>
-        <section>
-            <!-- Cat Gif here -->
-            <div id="cat-container"></div>
+        <div class="space-y-6">
 
+            <!--Displayed photo/gif-->
+            <div id="cat-container" class="flex justify-center bg-salmon"></div>
             <!-- Joke here -->
-            <div id="joke-container"></div>
-        </section>
-
-        <!-- Div for positioning button with css-->
-        <div>
-            <!-- Click button to refresh page and get new cat gif and joke content -->
-            <button id='catGet'>get cat</button>
+            <div id="joke-container" class="flex justify-center"></div>
+            <!-- Randomize with btn end-->
+            <div class="flex justify-center">
+                <button id='catGet'
+                    class="bg-purple-300 transform motion-safe:hover:scale-110 text-white font-bold py-2 px-4 rounded">get
+                    cat</button>
+            </div>
         </div>
+        
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="flex justify-around bg-yellow-300">
         <h2>❤️ Made with love by Group 1.</h2>
-        <div>
-            <a>We want you to have FUN!</a><br />
-            &copy; Coding Bootcamp Group 1.
-        </div>
+        <h2>We hope you had FUN!</h2>
+        <h2>&copy; Coding Bootcamp Group 1</h2>
     </footer>
     <!-- Local JS file linked-->
     <script src="./assets/js/script.js"></script>
