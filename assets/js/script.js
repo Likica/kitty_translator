@@ -1,4 +1,5 @@
 var catImg = document.createElement('img');
+var savedCats = [];
 
 fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
     
@@ -29,16 +30,17 @@ fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be
 
     function catSaved(e){
         console.log("got clicked")
-        // var catImg = document.createElement('img');
-        // catImg.setAttribute('src', response[0].url);
+        var catImg = document.createElement('img');
+        catImg.setAttribute('src', response[0].url);
         
         var catPlace = document.getElementById("catSaveDisplay")
         var saveCatEl = document.getElementById("catSave")
         
         catPlace.appendChild(catImg)
         
-        
-        }
+        localStorage.setItem(catImg, );
+        localStorage.getItem(catImg, );
+        };
 
 });
 
@@ -52,18 +54,7 @@ function gotClicked(e) {
 
 
 
-// function catSaved(e){
-// console.log("got clicked")
-// var catImg = document.createElement('img');
-// catImg.setAttribute('src', response[0].url);
 
-// var catPlace = document.getElementById("catSaveDisplay")
-// var saveCatEl = document.getElementById("catSave")
-
-// catPlace.appendChild(catImg)
-
-
-// }
 
 //jokeapi
 fetch(`https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single`)
