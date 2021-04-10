@@ -39,7 +39,7 @@ function gotClicked(e) {
 //cat facts API
 
 fetch(
-    'https://catfact.ninja/fact?max_length=140'
+    'https://catfact.ninja/fact'
   )
     .then(function(response) {
       return response.json();
