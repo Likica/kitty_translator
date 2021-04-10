@@ -53,12 +53,15 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         //set src attribute to the joke url from joke api response
         jokeText.innerText = response.joke;
 
+        //set classes
+        jokeContainerEl.className = 'bg-red-200 py-2 px-4 rounded flex justify-center';
+
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
     });
-var button = document.getElementById("jokeGet")
+// var button = document.getElementById("jokeGet")
 
-button.addEventListener("click", gotClicked);
+// button.addEventListener("click", gotClicked);
 
 function gotClicked(e) {
     window.location.reload();
