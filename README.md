@@ -24,7 +24,7 @@ Cute and Funny! The "kitty_translator"
  1. LANDING PAGE
  <br></br>
 <p align="center" width="100%">
-    <img src="./assets/images/FrontPage_display.png" alt="LandingPage" class="align" width="200"/>
+    <img src="./assets/images/FrontPage_display.png" width="30%"/>
 </p>
 
 ### **_Contribution_**
