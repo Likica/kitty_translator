@@ -1,7 +1,7 @@
 /* Header styles */
 header {
-  padding: 30px;
-  margin-bottom: 40px;
+  padding: 25px 25px 10px 25px;
+  margin-bottom: 25px;
 }
 
 header div h1{
@@ -26,6 +26,13 @@ header div h2 {
 .bottom-row {
   letter-spacing: 10px;
   line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-family: "Spartan", sans-serif;
+  margin-top: 25px;
+  font-size: 18px;
 }
 
 /*Footer basic CSS*/
@@ -35,6 +42,7 @@ footer {
     object-position: bottom;
     position: fixed;
     bottom: 0;
+    font-family: "Spartan", sans-serif;
   }
   
   footer h2 {
