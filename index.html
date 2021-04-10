@@ -10,41 +10,35 @@
     <!--Local css file linked-->
     <link href="./assets/css/style.css" rel="stylesheet">
 
-    <title>Kitty Translator</title>
+    <title>Just Kitten Around!</title>
 </head>
 
 <body>
     <!-- Header (contributed by commits from Becca/Emily/Katie)-->
     <header class="text-center">
-        <h1>CAT-TASTROPHY</h1>
+        <h1>Just Kitten Around!</h1>
         <h2>One stop shop for your cat photos and a good laugh.</h2>
     </header>
 
     <main>
-        <div>
-            <!-- userInput with search btn start-->
-            <div class="card">
-                <h3>Welcome to Kitty Translator! Please Have Fun!</h3>
-            </div>
+        <div class="space-y-6">
 
             <!--Displayed photo/gif-->
             <div id="cat-container" class="flex justify-center bg-salmon"></div>
-            <!--Display quote/joke-->
+            <!-- Joke here -->
+            <div id="joke-container" class="flex justify-center"></div>
+            <!-- Randomize with btn end-->
             <div class="flex justify-center">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa neque autem error, deserunt eos
-                    tempora nam omnis quo est magnam dicta sit, cupiditate, dolores provident corporis voluptates minus
-                    dolorem commodi.</p>
+                <button id='catGet'
+                    class="bg-purple-300 transform motion-safe:hover:scale-110 text-white font-bold py-2 px-4 rounded">get
+                    cat</button>
             </div>
-                    <!-- Randomize with btn end-->
-                    <div class="flex justify-center">
-                        <button id='catGet' class="bg-purple-300 transform motion-safe:hover:scale-110 hover:bg-purple-700 hover:textColor-gray-100">get cat</button>
-                    </div>
-                </div>
-            </div>
+        </div>
+        
     </main>
 
     <!-- Footer -->
-    <footer class="flex justify-around">
+    <footer class="flex justify-around bg-yellow-300">
         <h2>❤️ Made with love by Group 1.</h2>
         <h2>We hope you had FUN!</h2>
         <h2>&copy; Coding Bootcamp Group 1</h2>

@@ -1,10 +1,11 @@
 
 /*Footer basic CSS*/
 footer {
-    background:deepskyblue;
-    width: 99%;
+    width: 100%;
     padding: 10px 5px;
     object-position: bottom;
+    position: fixed;
+    bottom: 0;
   }
   
   footer h2 {
