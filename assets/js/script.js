@@ -11,7 +11,7 @@ fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be
 
     .then(function (response) {
         //use "querySelector to get the ID of where the cat will be displayed"
-        var catContainerEl = document.querySelector("#cat-container");
+        var catContainerEl = document.querySelector("#catImg-container");
 
         //create an img element
         var catImg = document.createElement('img');
@@ -35,6 +35,30 @@ function gotClicked(e) {
     window.location.reload();
 }
 
+
+//cat facts API
+
+fetch(
+    'https://catfact.ninja/fact?max_length=140'
+  )
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      console.log(response);
+
+    var catFactContainerEL = document.querySelector("#catFact-container");
+    
+    var catFact = document.createElement('fact');
+
+    catFact.innerText = response.fact;
+
+    catFactContainerEL.appendChild(catFact);
+    });
+  
+
+
+
 // Random Joke API 
 
 fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-55')
@@ -56,10 +80,4 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
     });
-var button = document.getElementById("jokeGet")
 
-button.addEventListener("click", gotClicked);
-
-function gotClicked(e) {
-    window.location.reload();
-}
