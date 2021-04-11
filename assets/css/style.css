@@ -37,11 +37,10 @@ header div h2 {
 
 /*Footer basic CSS*/
 footer {
-    width: 100%;
     padding: 10px 5px;
-    object-position: bottom;
-    position: static;
+    position: absolute;
     bottom: 0;
+    width: 100%;
     font-family: "Spartan", sans-serif;
   }
   
