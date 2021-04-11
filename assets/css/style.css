@@ -61,16 +61,9 @@ footer a {
   color:red;
 }
 
-/* Media Query for smaller screen sizes */
-/* @media screen and (max-width: 575px){
-
-}
-
-@media screen and (max-width: 768px){
-    
-}
-
-@media screen and (max-width: 980px){
-    
+/* Media Query for extra large screen sizes */
+/* @media (min-width: 1650px){
+  3xl\:fixed { position: fixed }
 } */
+
   

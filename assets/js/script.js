@@ -1,11 +1,11 @@
 // tailwind.config.js
 /* module.exports = {
     theme: {
-        // make breakpoints for different screen sizes
-        screens: {
-            'sm': {'max': '575px'},
-            'md': {'max': '768px'},
-            'lg': {'max': '980px'},
+        // extend for larger breakpoint
+        extend: {
+            screens: {
+                '3xl': '1600px'
+            }
         }
     }
 } */
