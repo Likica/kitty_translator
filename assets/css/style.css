@@ -40,7 +40,7 @@ footer {
     width: 100%;
     padding: 10px 5px;
     object-position: bottom;
-    position: fixed;
+    position: static;
     bottom: 0;
     font-family: "Spartan", sans-serif;
   }
