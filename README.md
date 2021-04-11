@@ -1,10 +1,12 @@
 <p align="center " width="100%">
 Cute and Funny! The "kitty_translator"
 
-### **Description**
+**Description**
+
 * _This application displays cat pictures accompanied with jokes._
 * _When user clicks the button, the page will display a random picture of a cat and a joke for some purrrr-fect fun time!_
-* _While cat pictures invoke warm feelings, jokes will 'crack you open' LOL_
+* _While cat pictures invoke warm feelings, jokes will 'crack you open'_ 
+
 
 ### **Purpose**
 * _This page is meant for pure fun with cute cat pictures and funny jokes_
