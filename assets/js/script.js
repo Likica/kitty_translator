@@ -93,6 +93,12 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
     });
+    
+fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXUMIDGLkB-7XdQ5wPCWQ')
+    .then(function (response) {
+        return response.json();
+    })
+
 // var button = document.getElementById("jokeGet")
 
 // button.addEventListener("click", gotClicked);
