@@ -123,6 +123,3 @@ fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXU
 
     })
 
-// var button = document.getElementById("jokeGet")
-
-// button.addEventListener("click", gotClicked);
