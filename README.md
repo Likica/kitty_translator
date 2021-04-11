@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-* **Just Kitten Around!**  
+Just Kitten Around!
 <br>
 The Cute and Funny "Just Kitten Arround" Page is made for people who love cats and like some fun and learning more about cats along the way.
 

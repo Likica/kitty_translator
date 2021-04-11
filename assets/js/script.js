@@ -50,28 +50,28 @@ function gotClicked(e) {
 
 fetch(
     'https://catfact.ninja/fact'
-  )
-    .then(function(response) {
-      return response.json();
+)
+    .then(function (response) {
+        return response.json();
     })
-    .then(function(response) {
-      console.log(response);
+    .then(function (response) {
+        console.log(response);
 
-    var catFactContainerEL = document.querySelector("#catFact-container");
-    
-    var catFact = document.createElement('fact');
+        var catFactContainerEL = document.querySelector("#catFact-container");
 
-    catFact.innerText = response.fact;
+        var catFact = document.createElement('fact');
 
-    catFactContainerEL.appendChild(catFact);
+        catFact.innerText = response.fact;
+
+        catFactContainerEL.appendChild(catFact);
     });
-  
+
 
 
 
 // Random Joke API 
 
-fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-55')
+fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-300')
 
     // Convert the response to JSON
     .then(function (response) {
