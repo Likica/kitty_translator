@@ -82,12 +82,18 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         var jokeContainerEl = document.querySelector("#joke-container");
 
         //create a text/text-box element
-        var jokeText = document.createElement('joke');
+        var jokeText = document.createElement('p');
 
         //set src attribute to the joke url from joke api response
         jokeText.innerText = response.joke;
 
+        //set classes
+        jokeText.className = 'flex justify-center w-1/2';
+
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
     });
+// var button = document.getElementById("jokeGet")
+
+// button.addEventListener("click", gotClicked);
 
