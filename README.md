@@ -28,7 +28,7 @@ The Cute and Funny "Just Kitten Arround" Page is made for people who love cats a
  1. Landing Page
  <br></br>
 <p align="center" width="100%">
-    <img src="./assets/images/Landing Page.png" width="30%"/>
+    <img src="./assets/images/Landing_Page.png" width="30%"/>
 </p>
 2. Random image of a cat
  <br></br>
@@ -50,5 +50,6 @@ The Cute and Funny "Just Kitten Arround" Page is made for people who love cats a
 <p align="center" width="100%">
     <img src="./assets/images/get_cat_btn1.jpeg" width="30%"/>
 </p>
+
 ### **_Contribution_**
 Made by Fahrija Wyroski, Emily Crook, Katie Redford, & Becca Wyland
