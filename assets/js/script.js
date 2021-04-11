@@ -105,12 +105,19 @@ fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXU
         
         console.log(fontList.items[randomIndex].family)
         
-
         var fontEl = document.querySelector(".fontbox");
         //    finds a font family
         var choseFont = fontList.items[randomIndex].family;
-        
-          
+        console.log(choseFont);
+
+        WebFont.load({
+            google: {
+                families: [choseFont]
+            }
+        });
+
+        fontEl.style.fontFamily= choseFont;
+         console.log(fontEl) 
 
         return choseFont;
 
