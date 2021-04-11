@@ -71,7 +71,7 @@ fetch(
 
 // Random Joke API 
 
-fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-300')
+fetch('https://v2.jokeapi.dev/joke/Miscellaneous,Programming,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-300')
 
     // Convert the response to JSON
     .then(function (response) {
@@ -93,7 +93,33 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
     });
-// var button = document.getElementById("jokeGet")
 
-// button.addEventListener("click", gotClicked);
+fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXUMIDGLkB-7XdQ5wPCWQ')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (fontList) {
+        console.log(fontList)
+
+        var randomIndex = Math.floor(Math.random() * fontList.items.length);
+
+        console.log(fontList.items[randomIndex].family)
+
+        var fontEl = document.querySelector(".fontbox");
+        //    finds a font family
+        var choseFont = fontList.items[randomIndex].family;
+        console.log(choseFont);
+
+        WebFont.load({
+            google: {
+                families: [choseFont]
+            }
+        });
+
+        fontEl.style.fontFamily = choseFont;
+        console.log(fontEl)
+
+        return choseFont;
+
+    })
 
