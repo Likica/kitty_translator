@@ -88,7 +88,7 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         jokeText.innerText = response.joke;
 
         //set classes
-        jokeText.className = 'font-bold py-2 px-4 rounded bg-white flex justify-center w-1/4';
+        jokeText.className = 'font-bold py-2 px-4 rounded bg-white flex justify-center w-1/4 bg-opacity-50';
 
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
