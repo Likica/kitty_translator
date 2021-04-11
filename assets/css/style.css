@@ -1,7 +1,7 @@
 /* Header styles */
 header {
   padding: 25px 25px 10px 25px;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
 header div h1{
@@ -40,7 +40,6 @@ footer {
   width: 100%;
   padding: 10px 5px;
   object-position: bottom;
-  position: fixed;
   bottom: 0;
   font-family: "Spartan", sans-serif;
 }
