@@ -1,0 +1,63 @@
+/* Header styles */
+header {
+  padding: 25px 25px 10px 25px;
+  margin-bottom: 45px;
+}
+
+header div h1{
+  font-weight: bold;
+  font-size: 90px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  letter-spacing: 15px;
+  font-family: "Vibes", cursive;
+}
+
+header div h2 {
+  font-size: 35px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+.top-row {
+  letter-spacing: 25px;
+  line-height: 45px;
+}
+
+.bottom-row {
+  letter-spacing: 10px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-family: "Spartan", sans-serif;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+/*Footer basic CSS*/
+footer {
+  width: 100%;
+  padding: 10px 5px;
+  object-position: bottom;
+  bottom: 0;
+  font-family: "Spartan", sans-serif;
+}
+  
+  
+footer div {
+  line-height: 1;
+  text-align: center;
+  padding: 10px;
+}
+  
+footer a {
+  color:red;
+}
+
+/* Media Query for extra large screen sizes */
+/* @media (min-width: 1650px){
+  3xl\:fixed { position: fixed }
+} */
+
+  
