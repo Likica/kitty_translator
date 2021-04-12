@@ -41,17 +41,21 @@ function displaySavedCats() {
     var catDisplayEl = document.querySelector("#catSaveDisplay");
 
     var catImg = document.createElement('img');
+    catImg.setAttribute('target', "window");
+
     catImg.setAttribute('src', savedCats[i]);
-    catImg.setAttribute('url', savedCats[i]);
+    catImg.setAttribute('href', savedCats[i]);
 
     catDisplayEl.appendChild(catImg)
-
+console.log(savedCats[i])
 
     }
 }
 }
 
 displaySavedCats()
+
+
 
 // Contribution by Katie - added locally by F and pushed to develop. Could not merge on GitHub because all files were pushed to the feature/catapi branch and were behind for large amount of commits from develop - if merged all files on develop would be overwritten by existing files in the feature/catapi branch
 fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
