@@ -5,80 +5,13 @@ var savedCats = [];
 if(localStorage.getItem('saved-cats')){
     savedCats = JSON.parse(localStorage.getItem('saved-cats'))
 }
+var saveCat = document.getElementById("saveCat")
 
-
-
-// fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
-    
-// // Conver the respionse to JSON
-// .then(function(response) {
-//     return response.json();
-// })
-
-// .then(function(response){
-//     //use "querySelector to get the ID of where the cat will be displayed"
-//     var catContainerEl = document.querySelector("#cat-container");
-
-//     //create an img element
-//     var catImg = document.createElement('img');
-
-//     //set src attribute to the image url from cat api response
-
-//     catImg.setAttribute('src', response[0].url);
-
-//     //append img element to page
-//     catContainerEl.appendChild(catImg);
-
-//     var saveCat = document.getElementById("saveCat")
-    
-    
-   
-
-// });
 
 var getButton = document.getElementById("catGet")
 
 getButton.addEventListener("click", gotClicked);
 
-function gotClicked() {
-    var catPic = document.getElementById("cat-image")
-    console.log(catPic)
-    if(catPic){
-    //     var catContainerEl = document.querySelector("#cat-container"); 
-    catPic.parentNode.removeChild(catPic)
-    // console.log(catImg.remove())
-       }
-
-    fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
-    
-// Convert the response to JSON
-.then(function(response) {
-    return response.json();
-})
-
-.then(function(response){
-    //use "querySelector to get the ID of where the cat will be displayed"
-    var catContainerEl = document.querySelector("#cat-container");
-
-    //create an img element
-    var catImg = document.createElement('img');
-
-    //set src attribute to the image url from cat api response
-    catImg.setAttribute("id", "cat-image")
-    catImg.setAttribute('src', response[0].url);
-
-    //append img element to page
-    catContainerEl.appendChild(catImg);
-
-    var saveCat = document.getElementById("saveCat")
-    
-    
-    
-})
-
-
-
-};
 
 saveCat.addEventListener("click", catSaved);
 
@@ -103,7 +36,7 @@ function catSaved(){
     console.log(savedCats)
     };
 
-gotClicked()
+//gotClicked()
 
 
 function displaySavedCats() {
@@ -124,48 +57,6 @@ function displaySavedCats() {
 }
 
 displaySavedCats()
-// //jokeapi
-// fetch(`https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single`)
-// .then(function(response) {
-//     return response.json();
-//   })
-//   .then(function(joke) {
-//     console.log(joke);
-//   });
-
-// // Conver the respionse to JSON
-// .then(function(response) {
-//     return response.json();
-// })
-
-// .then(function(response){
-//     //use "querySelector to get the ID of where the cat will be displayed"
-
-
-
-//     var jokeContainerEl = document.querySelector("#joke-container");
-
-//     // //create an img element
-//     var joke = document.createElement('p');
-
-//      //set src attribute to the image url from cat api response
-
-//     jokeText.setAttribute('src', joke);
-
-//     //append img element to page
-//      jokeContainerEl.appendChild(joke);
-// });
-// tailwind.config.js
-/* module.exports = {
-    theme: {
-        // extend for larger breakpoint
-        extend: {
-            screens: {
-                '3xl': '1600px'
-            }
-        }
-    }
-} */
 
 // Contribution by Katie - added locally by F and pushed to develop. Could not merge on GitHub because all files were pushed to the feature/catapi branch and were behind for large amount of commits from develop - if merged all files on develop would be overwritten by existing files in the feature/catapi branch
 fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
@@ -186,6 +77,7 @@ fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be
         //set src attribute to the image url from cat api response
 
         catImg.setAttribute('src', response[0].url);
+        catImg.setAttribute('id', 'cat-image')
 
         //set classes
         catImg.className = 'object-scale-down h-96 w-1/2';
@@ -235,6 +127,7 @@ fetch('https://v2.jokeapi.dev/joke/Miscellaneous,Programming,Pun,Christmas?black
         return response.json();
     })
     .then(function (response) {
+        console.log('JOKE API got stuff back', response)
         //use "querySelector to get the ID of where the joke will be displayed"
         var jokeContainerEl = document.querySelector("#joke-container");
 
