@@ -2,6 +2,11 @@ var catImg = document.createElement('img');
 catImg.setAttribute("id", "cat-image")
 var savedCats = [];
 
+if(localStorage.getItem('saved-cats')){
+    savedCats = JSON.parse(localStorage.getItem('saved-cats'))
+}
+
+
 
 // fetch(`https://api.thecatapi.com/v1/images/search?api_key=dcf111f5-1f90-4914-9be9-fe70f80fdda3`)
     
@@ -85,7 +90,7 @@ function catSaved(){
     var catPlace = document.getElementById("catSaveDisplay")
     var saveCatEl = document.getElementById("catSave")
     
-    catPlace.appendChild(catImg)
+    //catPlace.appendChild(catImg)
     // var catSource = catImg.attribute('src')
     savedCats.push(catImg.src)
     console.log(catImg)
@@ -100,6 +105,25 @@ function catSaved(){
 
 gotClicked()
 
+
+function displaySavedCats() {
+    for (let i = 0; i < savedCats.length; i++) {
+        
+    
+    if(savedCats.length > 0) {
+    var catDisplayEl = document.querySelector("#catSaveDisplay");
+
+    var catImg = document.createElement('img');
+    catImg.setAttribute('src', savedCats[i]);
+
+    catDisplayEl.appendChild(catImg)
+
+
+    }
+}
+}
+
+displaySavedCats()
 // //jokeapi
 // fetch(`https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single`)
 // .then(function(response) {
