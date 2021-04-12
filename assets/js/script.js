@@ -17,26 +17,20 @@ saveCat.addEventListener("click", catSaved);
 
 function catSaved(){
     console.log("got clicked")
-    // var catImg = document.createElement('img');
-    // catImg.setAttribute('src', response[0].url);
+   
     var catImg = document.getElementById("cat-image")
     var catPlace = document.getElementById("catSaveDisplay")
     var saveCatEl = document.getElementById("catSave")
     
-    //catPlace.appendChild(catImg)
-    // var catSource = catImg.attribute('src')
+    
     savedCats.push(catImg.src)
-    console.log(catImg)
-    console.log(catImg.src)
     localStorage.setItem("saved-cats", JSON.stringify(savedCats));
-    // console.log(savedCats)
+  
 
     var cats = localStorage.getItem("saved-cats")
-    
-    console.log(savedCats)
     };
 
-//gotClicked()
+
 
 
 function displaySavedCats() {
@@ -48,6 +42,7 @@ function displaySavedCats() {
 
     var catImg = document.createElement('img');
     catImg.setAttribute('src', savedCats[i]);
+    catImg.setAttribute('url', savedCats[i]);
 
     catDisplayEl.appendChild(catImg)
 
