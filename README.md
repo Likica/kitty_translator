@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-* **Just Kitten Around!**  
+Just Kitten Around!
 <br>
 The Cute and Funny "Just Kitten Arround" Page is made for people who love cats and like some fun and learning more about cats along the way.
 
@@ -15,10 +15,19 @@ The Cute and Funny "Just Kitten Arround" Page is made for people who love cats a
 
 ### **Built With**
 * _HTML_
-* _CSS/Tailwind_
+* _CSS_
 * _Javascript_
+#### *Web API*
+* _Document Object Model (DOM)_
+#### *Third Party APIs:*
+* _Tailwind_
+* _GoogleRandomFontsAPI_
+#### *Server Side APIs:*
 * _Cat API_
 * _Joke API_
+* _CatFactsAPI_
+
+
 
 ### **Link to project launched on GitHub Pages:**
 *https://likica.github.io/kitty_translator/*
@@ -52,4 +61,4 @@ The Cute and Funny "Just Kitten Arround" Page is made for people who love cats a
 </p>
 
 ### **_Contribution_**
-Made by Fahrija Wyroski, Emily Crook, Katie Redford, & Becca Wyland
+*Fahrija Wyroski, Emily Crook, Katie Redford, & Becca Wyland*

@@ -49,8 +49,8 @@ function gotClicked(e) {
 //cat facts API
 
 fetch(
-        'https://catfact.ninja/fact'
-    )
+    'https://catfact.ninja/fact'
+)
     .then(function (response) {
         return response.json();
     })
@@ -71,7 +71,7 @@ fetch(
 
 // Random Joke API 
 
-fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-55')
+fetch('https://v2.jokeapi.dev/joke/Miscellaneous,Programming,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single&format=text&idRange=0-300')
 
     // Convert the response to JSON
     .then(function (response) {
@@ -88,7 +88,7 @@ fetch('https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?black
         jokeText.innerText = response.joke;
 
         //set classes
-        jokeText.className = 'flex justify-center w-1/2';
+        jokeText.className = 'font-bold py-2 px-4 rounded bg-white flex justify-center w-1/4 bg-opacity-50';
 
         //append img element to page
         jokeContainerEl.appendChild(jokeText);
@@ -102,9 +102,9 @@ fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXU
         console.log(fontList)
 
         var randomIndex = Math.floor(Math.random() * fontList.items.length);
-        
+
         console.log(fontList.items[randomIndex].family)
-        
+
         var fontEl = document.querySelector(".fontbox");
         //    finds a font family
         var choseFont = fontList.items[randomIndex].family;
@@ -116,13 +116,10 @@ fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXU
             }
         });
 
-        fontEl.style.fontFamily= choseFont;
-         console.log(fontEl) 
+        fontEl.style.fontFamily = choseFont;
+        console.log(fontEl)
 
         return choseFont;
 
     })
 
-// var button = document.getElementById("jokeGet")
-
-// button.addEventListener("click", gotClicked);

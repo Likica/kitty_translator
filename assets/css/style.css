@@ -49,17 +49,11 @@ footer {
   font-family: "Spartan", sans-serif;
 }
   
-footer h2 {
-  display: inline;
-  color:black;
-  font-size: 14px;
-  margin: 0;
-}
   
 footer div {
   line-height: 1;
-  text-align: left;
-  float: right;
+  text-align: center;
+  padding: 10px;
 }
   
 footer a {
