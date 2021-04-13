@@ -35,10 +35,44 @@ header div h2 {
   font-size: 18px;
 }
 
- /* .cat-gallery {
-  max-width: 100%;
-  height: auto;
-} */
+/* style cat gallery */
+.gallery-line {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+.gallery-line > span {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-line > span:before,
+.gallery-line > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.5;
+}
+
+.gallery-line > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.gallery-line > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+#cat-gallery {
+  font-size: 28px;
+  font-family: "Spartan", sans-serif;
+}
 
 
 /* for footer issue */
