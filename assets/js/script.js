@@ -34,23 +34,38 @@ function catSaved(){
 
 
 function displaySavedCats() {
+    //loops through savedCats array
     for (let i = 0; i < savedCats.length; i++) {
         
-    
+    //when the array has something in it then...
     if(savedCats.length > 0) {
-    var catDisplayEl = document.querySelector("#catSaveDisplay");
 
+    //this gets brings the place where the cat picture goes into the javascript
+    var catDisplayEl = document.querySelector("#catSaveDisplay");
+    
+    //this creates an image element we can use to put array info with
     var catImg = document.createElement('img');
   
-
+    //setAttribut() needs 2 arguments, "attribute name" , "attribute value" 
+    //this is telling the catImg variable that source of its image comes from the 
+    // "savedCats" array
     catImg.setAttribute('src', savedCats[i]);
   
-    
-    var  a = document.createElement("a");
-    a.setAttribute("href", savedCats[i])
-    a.setAttribute("target", '_blank')
-    a.appendChild(catImg)
-    catDisplayEl.appendChild(a)
+    //this creats an "a" tag in the html
+    var  catLink = document.createElement("a");
+
+    //this tells the variable to get the URL from the "saved cats" array and make it a hyperlink
+    catLink.setAttribute("href", savedCats[i])
+
+    //this tells the variable to open the link a new window
+    catLink.setAttribute("target", '_blank')
+
+    //this makes the catImg a child of the catLink, the variable now includes the URL and
+    //the image
+    catLink.appendChild(catImg)
+
+    //this displays the image that is also a link on the page
+    catDisplayEl.appendChild(catLink)
 
 
     }
