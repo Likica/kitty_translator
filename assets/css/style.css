@@ -35,6 +35,12 @@ header div h2 {
   font-size: 18px;
 }
 
+ /* .cat-gallery {
+  max-width: 100%;
+  height: auto;
+} */
+
+
 /* for footer issue */
 main {
   padding-bottom: 60px;

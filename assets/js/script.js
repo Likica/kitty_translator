@@ -45,6 +45,9 @@ function displaySavedCats() {
     
     //this creates an image element we can use to put array info with
     var catImg = document.createElement('img');
+
+    // Dynamically style images in the cat gallery
+    catImg.classList = "max-w-xs max-h-40 m-3";
   
     //setAttribut() needs 2 arguments, "attribute name" , "attribute value" 
     //this is telling the catImg variable that source of its image comes from the 
