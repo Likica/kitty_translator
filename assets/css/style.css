@@ -35,6 +35,11 @@ header div h2 {
   font-size: 18px;
 }
 
+/* Save Cat button */
+#saveCat {
+  font-family: "Spartan", sans-serif;
+}
+
 /* style cat gallery */
 .gallery-line {
   display: block;
