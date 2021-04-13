@@ -16,7 +16,7 @@ getButton.addEventListener("click", gotClicked);
 saveCat.addEventListener("click", catSaved);
 
 function catSaved(){
-    console.log("got clicked")
+    
    
     var catImg = document.getElementById("cat-image")
     var catPlace = document.getElementById("catSaveDisplay")
@@ -41,13 +41,16 @@ function displaySavedCats() {
     var catDisplayEl = document.querySelector("#catSaveDisplay");
 
     var catImg = document.createElement('img');
-    catImg.setAttribute('target', "window");
+  
 
     catImg.setAttribute('src', savedCats[i]);
-    catImg.setAttribute('href', savedCats[i]);
+  
+    
+    var  a = document.createElement("a");
+    a.setAttribute("href", savedCats[i])
+    a.appendChild(catImg)
+    catDisplayEl.appendChild(a)
 
-    catDisplayEl.appendChild(catImg)
-console.log(savedCats[i])
 
     }
 }
@@ -103,7 +106,7 @@ fetch(
         return response.json();
     })
     .then(function (response) {
-        console.log(response);
+       
 
         var catFactContainerEL = document.querySelector("#catFact-container");
 
@@ -126,7 +129,7 @@ fetch('https://v2.jokeapi.dev/joke/Miscellaneous,Programming,Pun,Christmas?black
         return response.json();
     })
     .then(function (response) {
-        console.log('JOKE API got stuff back', response)
+      
         //use "querySelector to get the ID of where the joke will be displayed"
         var jokeContainerEl = document.querySelector("#joke-container");
 
