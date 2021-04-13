@@ -48,6 +48,7 @@ function displaySavedCats() {
     
     var  a = document.createElement("a");
     a.setAttribute("href", savedCats[i])
+    a.setAttribute("target", '_blank')
     a.appendChild(catImg)
     catDisplayEl.appendChild(a)
 
