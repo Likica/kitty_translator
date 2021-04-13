@@ -35,6 +35,11 @@ header div h2 {
   font-size: 18px;
 }
 
+/* Get Cat button */
+#catGet {
+  font-family: "Spartan", sans-serif;
+}
+
 /* Save Cat button */
 #saveCat {
   font-family: "Spartan", sans-serif;
