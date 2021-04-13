@@ -34,30 +34,25 @@ The Cute and Funny "Just Kitten Arround" Page is made for people who love cats a
 
 ### **Screenshots ...more coming...**
 <h3 align="center" width="100%">
- 1. Landing Page
- <br></br>
+ <br>1. Landing Page</br>
 <p align="center" width="100%">
-    <img src="./assets/images/Landing_Page.png" width="30%"/>
+    <img src="./assets/images/landing_pg.png" width="40%"/>
 </p>
 2. Random image of a cat
- <br></br>
 <p align="center" width="100%">
-    <img src="./assets/images/cat_img.jpeg" width="30%"/>
+    <img src="./assets/images/cat_img.jpeg" width="40%"/>
 </p>
 3. Random Joke
- <br></br>
 <p align="center" width="100%">
-    <img src="./assets/images/joke.jpeg" width="30%"/>
+    <img src="./assets/images/joke.jpeg" width="40%"/>
 </p>
 4. Random Fact about cats
- <br></br>
 <p align="center" width="100%">
-    <img src="./assets/images/cat_fact.jpeg" width="30%"/>
+    <img src="./assets/images/cat_fact.jpeg" width="40%"/>
 </p>
 5. Use get_cat Button to get more!
- <br></br>
 <p align="center" width="100%">
-    <img src="./assets/images/get_cat_btn1.jpeg" width="30%"/>
+    <img src="./assets/images/getcat_btn.jpeg" width="40%"/>
 </p>
 
 ### **_Contribution_**
