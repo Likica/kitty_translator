@@ -26,11 +26,8 @@ function catSaved(){
     savedCats.push(catImg.src)
     localStorage.setItem("saved-cats", JSON.stringify(savedCats));
   
-
     var cats = localStorage.getItem("saved-cats")
     };
-
-
 
 
 function displaySavedCats() {
