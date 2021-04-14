@@ -190,6 +190,8 @@ fetch('https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyCHPgywlPlz72kXU
         fontEl.style.fontFamily = choseFont;
         console.log(fontEl)
 
+        // fontEl.className = 'text-xl';
+
         return choseFont;
 
     })
