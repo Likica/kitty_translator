@@ -43,7 +43,7 @@ header div h2 {
 }
 
 #catGet:hover {
-  background-color: #1F2937;
+  background-color: #5B21B6;
 }
 /* end Get Cat styles */
 
@@ -54,7 +54,8 @@ header div h2 {
 }
 
 #saveCat:hover {
-  background-color: rgba(196, 181, 253, 0.5);
+  background-color: rgba(91, 33, 182, 0.2);
+  color: white;
 }
 
 /* style cat gallery */
