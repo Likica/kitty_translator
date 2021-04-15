@@ -34,10 +34,16 @@ header div h2 {
   margin-top: 25px;
   font-size: 18px;
 }
+/* end Header styles */
 
 /* Get Cat button */
 #catGet {
   font-family: "Spartan", sans-serif;
+  transition: 0.3s;
+}
+
+#catGet:hover {
+  background-color: #1F2937;
 }
 
 /* Save Cat button */
