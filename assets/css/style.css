@@ -45,10 +45,16 @@ header div h2 {
 #catGet:hover {
   background-color: #1F2937;
 }
+/* end Get Cat styles */
 
 /* Save Cat button */
 #saveCat {
   font-family: "Spartan", sans-serif;
+  transition: 0.3s;
+}
+
+#saveCat:hover {
+  background-color: rgba(196, 181, 253, 0.5);
 }
 
 /* style cat gallery */
